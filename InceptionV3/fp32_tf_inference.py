@@ -27,7 +27,7 @@ def predict_image(model, image_path):
 if __name__ == "__main__":
     model = load_pretrained_model()
 
-    image_path = '/home/test/Downloads/cat.jpg'  # Path to the image you want to predict
+    image_path = 'cat.jpg'  # Path to the image you want to predict
     predicted_class = predict_image(model, image_path)
     print(f'The predicted class is: {predicted_class[1]} with a probability of {predicted_class[2]:.2f}')
 
