@@ -50,7 +50,7 @@ if __name__ == "__main__":
     model = load_pretrained_model()
     class_names = load_class_names('imagenet_classes.txt')  # Path to the ImageNet classes file
 
-    image_path = '/home/test/Downloads/cat.jpg'  # Path to the image you want to predict
+    image_path = 'cat.jpg'  # Path to the image you want to predict
     predicted_class = predict_image(model, image_path, class_names)
     if predicted_class is not None:
         print(f'The predicted class is: {predicted_class}')
